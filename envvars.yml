@@ -1,7 +1,0 @@
-envvars:
-  - name: AWS_REGION
-    desc: AWS Region to deploy to
-    optional: true
-
-  - name: TERRAFORM_WORKSPACE
-    desc: Terraform Workspace that will be deployed to
