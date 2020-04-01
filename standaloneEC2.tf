@@ -31,7 +31,7 @@ resource "aws_key_pair" "rsa_keypair" {
 resource "aws_instance" "instance_one" {
     depends_on              = [aws_key_pair.rsa_keypair]
     instance_type           = "t3.xlarge"
-    ami                     = "ami-06c20c64" #windows
+    ami                     = "ami-0df33e36ca53be643" #windows
     iam_instance_profile    = aws_iam_instance_profile.instance_profile.name
     vpc_security_group_ids  = [aws_security_group.security_group.id]
     #user_data               = file("user_data.ps1")
